@@ -1560,7 +1560,7 @@ console.log("The temperatures for this array are: " + temps);
 
 
 var timeWhenItWillRain = forecastData.hourly.data.filter(isItRaining).reduce(function (acc, rainObj) {
-    acc.push(new Date(rainObj.time));
+    acc.push(Date(rainObj.time));
     return acc;
 }, []);
 
